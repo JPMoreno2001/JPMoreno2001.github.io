@@ -104,18 +104,9 @@
         </table>
 
         <br>
-        <label for="userInput">Enter something:</label>
-        <input type="text" id="userInput">
-        <button onclick="display()">Display Input</button>
-
-        <p id="displayArea"></p>
-
-        <script>
-            function display() {
-                var userInput = document.getElementById('userInput').value;
-                document.getElementById('displayArea').innerText = userInput;
-            }
-        </script>
+        <input id="input" type="text" placeholder="Type something"/>
+        <button id="button" onclick="printInput()">Print Input</button>
+        <h3 id="output"></h3>
     </body>
 
 </html>
