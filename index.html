@@ -104,11 +104,18 @@
         </table>
 
         <br>
-        <form action="#" method="get">
-            <label for="userInput">Enter something:</label>
-            <input type="text" id="userInput" name="userInput">
-            <input type="submit" value="Display Input">
-        </form>
+        <label for="userInput">Enter something:</label>
+        <input type="text" id="userInput">
+        <button onclick="display()">Display Input</button>
+
+        <p id="displayArea"></p>
+
+        <script>
+            function display() {
+                var userInput = document.getElementById('userInput').value;
+                document.getElementById('displayArea').innerText = userInput;
+            }
+        </script>
     </body>
 
 </html>
