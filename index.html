@@ -12,7 +12,7 @@
         <p>Year of University Enrollment: 2021</p>
         <a href="https://github.com/JPMoreno2001">Link to my Github</a>
         <h2 style="font-family: Segoe Script">Personal Summary</h2>
-        <p>I like programming, reading and movies</p>
+        <p style="font-family: Segoe Script">I like programming, reading and movies</p>
 
         <style>
             table {
@@ -28,6 +28,10 @@
             tr:nth-child(even) {
               background-color: #D6EEEE;
             }
+
+            colors {
+                color: value;
+            }
         </style>
         <!--"https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra"-->
 
@@ -38,7 +42,10 @@
             </tr>
             <tr>
                 <td>Python</td>
-                <td style="color:green;">Expert</td>
+                <td class="ex">Expert</td>
+                .ex{
+                    color: green;
+                }
             </tr>
             <tr>
                 <td>JavaScript</td>
