@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>JPM's Web Page</title>
 </head>
 
 <body class="colorceleste">
     <h1 style="font-family: Comic Sans MS">Morny's page</h1>
-    <p class="colorgreen">Name: Juan Pablo Moreno</p>
-    <p class="colororange">Major: Computer Science</p>
-    <p class="colorblue">Year of University Enrollment: 2021</p>
-    <a href="https://github.com/JPMoreno2001">Link to my Github</a>
-    <h2 style="font-family: Segoe Script">Personal Summary</h2>
-    <p style="font-family: Segoe Script">I like programming, reading and watching movies</p>
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            ABOUT ME
+            <br>
+            <p class="colorgreen">Name: Juan Pablo Moreno</p>
+            <p class="colororange">Major: Computer Science</p>
+            <p class="colorblue">Year of University Enrollment: 2021</p>
+            <a href="https://github.com/JPMoreno2001">Link to my Github</a>
+            <h2 style="font-family: Segoe Script">Personal Summary</h2>
+            <p style="font-family: Segoe Script">I like programming, reading and watching movies</p>
+          </div>
+          <div class="col">
+            SKILLS
+            <br>
+            <table class="center">
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td class="colorgreen">Expert</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td class="colorred">Basic</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td class="colorred">Basic</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td class="coloryellow">Advanced</td>
+                </tr>
+                <tr>
+                    <td>Excel</td>
+                    <td class="colorgreen">Expert</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td class="colorred">Basic</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td class="colorgray">None</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td class="colorgreen">Expert</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td class="colorblue">Native</td>
+                </tr>
+            </table>
+          </div>
+          <div class="col">
+            BUTTON
+            <br>
+            <input id="input" type="text" placeholder="Type something"/>
+            <button id="button" onclick="printInput()">Print Input</button>
+            <h3 id="output"></h3>
+
+            <script>
+                function printInput() {
+                    var inputValue = document.getElementById("input").value;
+                    document.getElementById("output").innerText = inputValue;
+                }
+            </script>
+            <br>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
     
     <style>
         .colorblue {
@@ -55,62 +128,14 @@
         tr:nth-child(even) {
           background-color: #D6EEEE;
         }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     </style>
 
-    <table>
-        <tr>
-            <th>Skill</th>
-            <th>Level</th>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td class="colorgreen">Expert</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td class="colorred">Basic</td>
-        </tr>
-        <tr>
-            <td>HTML/CSS</td>
-            <td class="colorred">Basic</td>
-        </tr>
-        <tr>
-            <td>Git</td>
-            <td class="coloryellow">Advanced</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td class="colorgreen">Expert</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td class="colorred">Basic</td>
-        </tr>
-        <tr>
-            <td>Ruby</td>
-            <td class="colorgray">None</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td class="colorgreen">Expert</td>
-        </tr>
-        <tr>
-            <td>Spanish</td>
-            <td class="colorblue">Native</td>
-        </tr>
-    </table>
-
-    <br>
-    <input id="input" type="text" placeholder="Type something"/>
-    <button id="button" onclick="printInput()">Print Input</button>
-    <h3 id="output"></h3>
-
-    <script>
-        function printInput() {
-            var inputValue = document.getElementById("input").value;
-            document.getElementById("output").innerText = inputValue;
-        }
-    </script>
     <div class="container-sm">100% wide until small breakpoint</div>
     <div class="container-md">100% wide until medium breakpoint</div>
     <div class="container-lg">100% wide until large breakpoint</div>
